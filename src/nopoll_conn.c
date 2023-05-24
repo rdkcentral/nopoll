@@ -2297,8 +2297,8 @@ void nopoll_conn_unref (noPollConn * conn)
 		nopoll_free (conn->handshake->websocket_accept);
 		nopoll_free (conn->handshake->expected_accept);
 		nopoll_free (conn->handshake->cookie);
-		nopoll_free (conn->handshake);
 		nopoll_free (conn->handshake->redirectURL);
+               nopoll_free (conn->handshake);
 	} /* end if */
 
 	/* release connection options if defined and reuse flag is not defined */
