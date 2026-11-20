@@ -34,8 +34,9 @@
  *
  *      Email address:
  *         info@aspl.es - http://www.aspl.es/nopoll
+ *
+ * Modifications Copyright 2018 Comcast Cable Communications Management, LLC.
  */
-/* Modifications Copyright 2026 Comcast Cable Communications Management, LLC. */
 #ifndef __NOPOLL_DECL_H__
 #define __NOPOLL_DECL_H__
 
