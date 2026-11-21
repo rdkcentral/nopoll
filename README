@@ -44,3 +44,10 @@ file's header:
 
 noPoll is licensed under the GNU Lesser General Public License v2.1;
 see the COPYING file.
+
+--== Linking requirement ==--
+
+Users of noPoll should link to it dynamically (as a shared library),
+not statically. To build only the shared library:
+
+    ./configure --disable-static --enable-shared
