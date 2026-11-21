@@ -23,6 +23,8 @@
 #  addition in the form of source code, project image, documentation
 #  patches, etc. 
 #
+#  Modifications Copyright 2018 Comcast Cable Communications Management, LLC.
+#
 
 PACKAGE="Lib noPoll: a websocket toolkit"
 OS=`uname -s`

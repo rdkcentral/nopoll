@@ -3,3 +3,51 @@
 --== Introduction ==--
 
 See http://www.aspl.es/nopoll
+
+--== Origin of this repository ==--
+
+This is a copy of the noPoll websocket toolkit from Advanced Software
+Production Line, S.L. (ASPL) (http://www.aspl.es/nopoll/,
+https://github.com/ASPLes/nopoll), version 0.4.4 (0.4.4.b349), with
+modifications by Comcast Cable Communications Management, LLC,
+incorporating further noPoll updates to version 0.4.6 (0.4.6.b400).
+
+History:
+
+  * Comcast forked upstream ASPLes/nopoll (master) at commit
+    d8da6ec3527ee3fadcce04dd145f257417fffc5b (Jun 9, 2017, upstream
+    release tag 0.4.4, version 0.4.4.b349) and began making changes on the "nopoll_yocto" branch
+    of https://github.com/xmidt-org/nopoll in July 2017.
+
+  * Upstream release 0.4.5 (commit
+    39dc2e1c7db4f5a0d889f0e317c877ad4a0d7276, Aug 21, 2017) was merged
+    into the fork in January 2018.
+
+  * Upstream release 0.4.6 (commit
+    5cf7c10c3b0b758ad254504bf0ae7e600b118528, Mar 1, 2018) was
+    incorporated into the fork in May 2018. No later upstream releases
+    (0.4.7 onwards) have been incorporated.
+
+  * The xmidt-org/nopoll "nopoll_yocto" branch was copied as-is into
+    https://github.com/rdkcentral/nopoll (commit
+    41f9cd37cf3bf657a598e2330d99aad316f8d0dd).
+
+The following files were added by Comcast and are derived from
+third-party code under their own (non-LGPL) licenses, as stated in each
+file's header:
+
+  * src/nopoll_hostcheck.[ch], src/nopoll_strcase.[ch],
+    src/nopoll_inet_pton.h  - curl, (C) 1998-2017 Daniel Stenberg et al.
+  * src/nopoll_inet_pton.c  - BIND 4.9.4, (C) 1996 Internet Software
+                              Consortium (ISC license)
+  * src/nopoll_hostname_validation.[ch] - (C) 2012 iSEC Partners (MIT)
+
+noPoll is licensed under the GNU Lesser General Public License v2.1;
+see the COPYING file.
+
+--== Linking requirement ==--
+
+Users of noPoll should link to it dynamically (as a shared library),
+not statically. To build only the shared library:
+
+    ./configure --disable-static --enable-shared
