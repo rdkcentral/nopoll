@@ -40,7 +40,7 @@ AC_INIT(nopoll, m4_esyscmd([cat VERSION | tr -d '\n']))
 export NOPOLL_VERSION=`cat $srcdir/VERSION`
 AC_SUBST(NOPOLL_VERSION)
 
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([foreign])
 AC_CONFIG_SRCDIR([src/nopoll.h])
 AM_CONFIG_HEADER(config.h)
 AM_MAINTAINER_MODE
