@@ -34,6 +34,8 @@
  *
  *      Email address:
  *         info@aspl.es - http://www.aspl.es/nopoll
+ *
+ *  Modifications Copyright 2017 Comcast Cable Communications Management, LLC.
  */
 #ifndef __NOPOLL_LOOP_H__
 #define __NOPOLL_LOOP_H__
